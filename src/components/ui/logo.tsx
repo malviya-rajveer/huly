@@ -1,0 +1,54 @@
+import { cn } from "@/lib/utils";
+
+export const Logo = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="40"
+      height="48"
+      viewBox="0 0 40 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("absolute z-20 size-20", className)}
+    >
+      <rect y="4" width="10" height="10" fill="#155EEF" />
+      <rect opacity="0.6" x="20" y="4" width="10" height="10" fill="#155EEF" />
+      <rect opacity="0.6" x="10" y="14" width="10" height="10" fill="#155EEF" />
+      <rect
+        opacity="0.45"
+        x="20"
+        y="14"
+        width="10"
+        height="10"
+        fill="#155EEF"
+      />
+      <rect opacity="0.3" x="30" y="14" width="10" height="10" fill="#155EEF" />
+      <rect opacity="0.6" y="24" width="10" height="10" fill="#155EEF" />
+      <rect
+        opacity="0.45"
+        x="10"
+        y="24"
+        width="10"
+        height="10"
+        fill="#155EEF"
+      />
+      <rect opacity="0.3" x="20" y="24" width="10" height="10" fill="#155EEF" />
+      <rect
+        opacity="0.15"
+        x="30"
+        y="24"
+        width="10"
+        height="10"
+        fill="#155EEF"
+      />
+      <rect opacity="0.3" x="10" y="34" width="10" height="10" fill="#155EEF" />
+      <rect
+        opacity="0.15"
+        x="20"
+        y="34"
+        width="10"
+        height="10"
+        fill="#155EEF"
+      />
+    </svg>
+  );
+};

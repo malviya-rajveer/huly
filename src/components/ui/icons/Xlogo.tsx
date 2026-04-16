@@ -1,0 +1,26 @@
+import { cn } from "@/lib/utils";
+
+export const X_Logo = ({ className }: { className: string }) => {
+  return (
+    <svg
+      width="50"
+      height="45"
+      viewBox="0 0 50 45"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn(className)}
+    >
+      <g clipPath="url(#clip0_313_342)">
+        <path
+          d="M39.2 0H46.8L30.2 19.1L49.8 45H34.4L22.4 29.3L8.6 45H1L18.8 24.6L0 0H15.8L26.7 14.4L39.2 0ZM36.5 40.4H40.7L13.5 4.3H8.9L36.5 40.4Z"
+          fill="#4A4A4A"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_313_342">
+          <rect width="49.8" height="45" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
