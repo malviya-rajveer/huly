@@ -35,7 +35,7 @@ export const Footer = () => {
               scale: 1,
             }}
             whileTap={{
-              scale: [1, 0.97, 1],
+              scale: [1, 0.98, 1],
             }}
             className={cn(
               "mx-auto mt-4 w-35 cursor-pointer rounded-lg bg-white bg-linear-to-b from-taupe-300 font-medium text-neutral-700 drop-shadow-md md:mt-6",
