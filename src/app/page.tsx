@@ -7,7 +7,7 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center bg-white font-sans selection:bg-taupe-700 selection:text-white">
+    <div className="flex flex-col items-center justify-center bg-white font-sans selection:bg-orange-400 selection:text-white">
       <Navbar></Navbar>
       <HeroSection></HeroSection>
       <WhyChooseUs></WhyChooseUs>
