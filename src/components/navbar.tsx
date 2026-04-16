@@ -34,10 +34,10 @@ export const Navbar = () => {
             <div className="text-[20px] font-medium text-neutral-800">Huly</div>
             <div className="mx-2 h-[70%] w-px bg-white/97"></div>
             <div className="mr-4 hidden items-center gap-3 text-[14px] font-medium text-neutral-700 md:flex">
-              <div>Docs</div>
-              <div>About Us</div>
-              <div>Resourses</div>
-              <div>Products</div>
+              <div className="cursor-pointer">Docs</div>
+              <div className="cursor-pointer">About Us</div>
+              <div className="cursor-pointer">Resourses</div>
+              <div className="cursor-pointer">Products</div>
             </div>
           </div>
           <div>
