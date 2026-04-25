@@ -24,7 +24,7 @@ export const ProductCard_1 = ({
           "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
       }}
       className={cn(
-        "absolute z-0 h-40 w-60 overflow-clip rounded-[16px] bg-white",
+        "pointer-events-none absolute z-0 flex h-40 w-60 items-center justify-center overflow-clip rounded-[16px] bg-white",
         className,
       )}
     >

@@ -11,7 +11,6 @@ import { CompanyCard_2 } from "./bento/CompanyCard_2";
 import { CompanyCard_1 } from "./bento/CompanyCard_1";
 import { ProductCard_1 } from "./bento/ProductCard_1";
 import { ProductCard_2 } from "./bento/ProductCard_2";
-import { NeuroNoise } from "@paper-design/shaders-react";
 
 export const HeroGrid = () => {
   // const stateVarient ={
@@ -38,9 +37,8 @@ export const HeroGrid = () => {
       transition={{
         duration: 0.3,
       }}
-      className="font-inter sticky top-[15vh] z-500 mx-auto mt-[55vh] h-125 w-[90%] overflow-hidden xl:w-[75rem]"
+      className="font-inter sticky top-[15vh] z-500 mx-auto mt-[55vh] h-125 w-[90%] xl:w-[75rem]"
     >
-      <NeuroNoise />
       <div className="absolute inset-0"></div>
       <motion.h2
         initial={{
@@ -123,12 +121,11 @@ export const HeroGrid = () => {
       <div className="mx-auto h-full w-[60rem] scale-50 md:w-[60rem] md:scale-50 lg:scale-100">
         <div className="relative -top-23 right-[140vw] scale-150 md:-top-43 md:right-[40vw] md:scale-140 lg:top-0 lg:right-0 lg:scale-80 xl:scale-100">
           <motion.div
-            initial={{ opacity: 0, filter: "blur(20px)", scale: 0.97 }}
+            initial={{ opacity: 0, scale: 1 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                     scale: 1,
                   }
                 : {}
@@ -144,12 +141,11 @@ export const HeroGrid = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }
@@ -163,12 +159,11 @@ export const HeroGrid = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }
@@ -182,12 +177,11 @@ export const HeroGrid = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }
@@ -200,12 +194,11 @@ export const HeroGrid = () => {
             <PurposeCard_2 className="top-77 left-106" state={state} />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }
@@ -218,12 +211,11 @@ export const HeroGrid = () => {
             <CompanyCard_1 className="top-15 -right-3" state={state} />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }
@@ -236,12 +228,11 @@ export const HeroGrid = () => {
             <CompanyCard_2 className="left-60" state={state} />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0 }}
             animate={
               InView
                 ? {
-                    opacity: 1,
-                    filter: "blur(0px)",
+                    opacity: [0, 1, 0, 1, 0, 1, 1],
                   }
                 : {}
             }

@@ -11,9 +11,10 @@ export const WhyChooseUs = () => {
   const [CurrentNumber, setCurrentNumber] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       setCurrentNumber((prev) => (prev + 1) % 3);
     }, 2000);
+    return () => clearInterval(intervalId);
   }, []);
   return (
     <div className="font-inter flex h-full w-full flex-col items-center bg-white">
