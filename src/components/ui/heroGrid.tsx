@@ -37,7 +37,7 @@ export const HeroGrid = () => {
       transition={{
         duration: 0.3,
       }}
-      className="font-inter sticky top-[15vh] z-500 mx-auto mt-[55vh] h-125 w-[90%] xl:w-[75rem]"
+      className="font-inter sticky top-[15vh] z-500 mx-auto mt-[55vh] hidden h-125 w-[90%] md:block xl:w-[75rem]"
     >
       <div className="absolute inset-0"></div>
       <motion.h2
