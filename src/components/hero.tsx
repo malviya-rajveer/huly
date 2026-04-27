@@ -7,9 +7,10 @@ import {
 } from "motion/react";
 import { BoxesHero } from "./ui/boxes-hero";
 import { useRef, useState } from "react";
-import { AnimatedHeroModel } from "./ui/animated-hero";
-import { HeroGrid } from "./ui/heroGrid";
+import { AnimatedHeroModel } from "./ui/hero/animated-hero";
+import { HeroGrid } from "./ui/hero/heroGrid";
 import { cn } from "@/lib/utils";
+import { WhiteButton } from "./ui/whiteButton";
 
 export const HeroSection = () => {
   const [animatButtoneGradient, setAnimatButtoneGradient] = useState(false);
@@ -116,46 +117,7 @@ export const HeroSection = () => {
           }}
           className="mt-8 flex w-full justify-center"
         >
-          <motion.button
-            initial={{
-              scale: 1,
-            }}
-            whileTap={{
-              scale: [1, 0.98, 1],
-            }}
-            className={cn(
-              "mx-auto cursor-pointer rounded-lg bg-white bg-linear-to-b from-taupe-200 font-medium text-neutral-700 drop-shadow-md",
-              "text-[12px] md:text-[15px]",
-            )}
-          >
-            <motion.div
-              animate={
-                animatButtoneGradient
-                  ? {
-                      backgroundPosition: ["150% center", "0% center"],
-                      opacity: 1,
-                    }
-                  : {}
-              }
-              onMouseEnter={() => {
-                setAnimatButtoneGradient(false);
-                setTimeout(() => setAnimatButtoneGradient(true), 50);
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-              }}
-              style={{
-                backgroundSize: "300% auto",
-              }}
-              className={cn(
-                "mx-auto bg-clip-text px-3 py-4 font-medium text-transparent",
-                "bg-[linear-gradient(90deg_in_oklch_longer_hue,var(--color-neutral-900)_23%,oklch(48.8%_0.243_264.376),oklch(64.6%_0.222_41.116),var(--color-neutral-900))]",
-              )}
-            >
-              New Agent beta version.
-            </motion.div>
-          </motion.button>
+          <WhiteButton title="New Agent beta version." />
         </motion.div>
       </motion.div>
       <BoxesHero></BoxesHero>

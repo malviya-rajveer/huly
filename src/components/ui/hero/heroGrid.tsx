@@ -4,13 +4,13 @@ import { motion, useInView } from "motion/react";
 import { useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
-import { PurposeCard_1 } from "./bento/PurposeCard_1";
-import { PurposeCard_2 } from "./bento/PurposeCard_2";
-import { CompanyCard_3 } from "./bento/CompanyCard_3";
-import { CompanyCard_2 } from "./bento/CompanyCard_2";
-import { CompanyCard_1 } from "./bento/CompanyCard_1";
-import { ProductCard_1 } from "./bento/ProductCard_1";
-import { ProductCard_2 } from "./bento/ProductCard_2";
+import { PurposeCard_1 } from "../bento/PurposeCard_1";
+import { PurposeCard_2 } from "../bento/PurposeCard_2";
+import { CompanyCard_3 } from "../bento/CompanyCard_3";
+import { CompanyCard_2 } from "../bento/CompanyCard_2";
+import { CompanyCard_1 } from "../bento/CompanyCard_1";
+import { ProductCard_1 } from "../bento/ProductCard_1";
+import { ProductCard_2 } from "../bento/ProductCard_2";
 
 export const HeroGrid = () => {
   // const stateVarient ={

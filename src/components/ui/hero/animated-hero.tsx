@@ -6,7 +6,7 @@ import {
   useInView,
   useMotionTemplate,
 } from "motion/react";
-import { Steps } from "./steps-demo";
+import { Steps } from "../steps-demo";
 import { cn } from "@/lib/utils";
 
 export const AnimatedHeroModel = ({

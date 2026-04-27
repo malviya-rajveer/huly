@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Logo } from "./ui/logo";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { WhiteButton } from "./ui/whiteButton";
 export const Navbar = () => {
   const [animatButtoneGradient, setAnimatButtoneGradient] = useState(false);
   const [animatButtoneGradient2, setAnimatButtoneGradient2] = useState(false);
@@ -81,46 +82,12 @@ export const Navbar = () => {
                 SignIn
               </motion.div>
             </motion.button>
-            <motion.button
-              initial={{
-                scale: 1,
-              }}
-              whileTap={{
-                scale: [1, 0.97, 1],
-              }}
-              className={cn(
-                "mx-auto h-6.5 cursor-pointer rounded-lg bg-white bg-linear-to-b from-taupe-100 font-medium text-neutral-700 drop-shadow-sm",
-                "text-[12px]",
-              )}
-            >
-              <motion.div
-                animate={
-                  animatButtoneGradient
-                    ? {
-                        backgroundPosition: ["150% center", "0% center"],
-                        opacity: 1,
-                      }
-                    : {}
-                }
-                onMouseEnter={() => {
-                  setAnimatButtoneGradient(false);
-                  setTimeout(() => setAnimatButtoneGradient(true), 50);
-                }}
-                transition={{
-                  duration: 0.8,
-                  ease: "easeOut",
-                }}
-                style={{
-                  backgroundSize: "300% auto",
-                }}
-                className={cn(
-                  "mx-auto bg-clip-text px-3 py-0.5 font-medium text-transparent",
-                  "bg-[linear-gradient(90deg_in_oklch_longer_hue,var(--color-neutral-900)_23%,oklch(48.8%_0.243_264.376),oklch(64.6%_0.222_41.116),var(--color-neutral-900))]",
-                )}
-              >
-                Start Building
-              </motion.div>
-            </motion.button>
+
+            <WhiteButton
+              buttonClassName="md:text-[12px] from-taupe-100"
+              textClassName="py-1 "
+              title="Start Building"
+            />
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { Logo } from "./ui/logo";
 import { Mial_Logo } from "./ui/icons/mail";
 import { X_Logo } from "./ui/icons/Xlogo";
 import { LinkdIn_Logo } from "./ui/icons/linkdinlogo";
+import { WhiteButton } from "./ui/whiteButton";
 export const Footer = () => {
   const [animatButtoneGradient, setAnimatButtoneGradient] = useState(false);
   return (
@@ -30,15 +31,18 @@ export const Footer = () => {
           {/* <div className="mt-4 text-center text-[14px] text-neutral-300">
             Build trust of your customers
           </div> */}
-          <motion.button
+          {/* <motion.button
             initial={{
               scale: 1,
             }}
             whileTap={{
-              scale: [1, 0.98, 1],
+              scale: [1, 0.97, 1],
+            }}
+            transition={{
+              duration: 0.17,
             }}
             className={cn(
-              "mx-auto mt-4 w-35 cursor-pointer rounded-lg bg-white bg-linear-to-b from-taupe-300 font-medium text-neutral-700 drop-shadow-md md:mt-6",
+              "mx-auto mt-4 w-35 cursor-pointer rounded-lg bg-white bg-linear-to-b from-taupe-300/80 font-medium text-neutral-700 drop-shadow-md md:mt-6",
               "text-[15px]",
             )}
           >
@@ -69,7 +73,12 @@ export const Footer = () => {
             >
               Join the Club
             </motion.div>
-          </motion.button>
+          </motion.button> */}
+          <WhiteButton
+            buttonClassName="mt-4 from-taupe-300"
+            textClassName="py-1"
+            title="Join the Club"
+          />
         </div>
         <div
           // style={{
